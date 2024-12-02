@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_home"
+        android:title="@string/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        />
+
+    <item
+        android:id="@+id/item_adminDoor"
+        android:title="@string/administrador_de_puertas"
+        android:enabled="true"
+        android:icon="@drawable/baseline_sensor_door_24"
+        />
+
+    <item
+        android:id="@+id/item_add_door"
+        android:title="@string/agregar_puerta"
+        android:enabled="true"
+        android:icon="@drawable/add_door"
+        />
+
+</menu>

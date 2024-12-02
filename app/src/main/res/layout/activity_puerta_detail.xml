@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PuertaDetail"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:id="@+id/textNameDoor"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textSize="40sp"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameDoor">
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/imgTrash"
+            android:layout_marginStart="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/trash" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPuerta"
+        android:layout_marginTop="15dp"
+        android:layout_width="230dp"
+        android:layout_height="270dp"
+        android:src="@drawable/door_icon_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/imgPuerta" />
+
+    <TextView
+        android:id="@+id/textActive"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/textIp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

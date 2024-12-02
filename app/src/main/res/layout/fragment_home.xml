@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/HomeFragment"
+    tools:context=".Views.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/user_login_icon"
+        android:contentDescription="Foto de perfil" />
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="229dp"
+        android:text="Hola Usuario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="258dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDoors"
+                app:backgroundTint="@color/purple_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/baseline_rectangle_24"
+                android:paddingVertical="40dp"
+                android:text="@string/administrador_de_puertas"
+                app:icon="@drawable/door_home"
+                app:iconGravity="top"
+                app:iconSize="50dp"
+                android:textColor="@color/white"
+                tools:ignore="ButtonStyle,TextContrastCheck,VisualLintButtonSize" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="0dp"
+                app:backgroundTint="@color/purple_main"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/baseline_rectangle_24"
+                android:paddingVertical="40dp"
+                android:text="Cerrar sesión"
+                app:icon="@drawable/logout"
+                app:iconGravity="top"
+                app:iconSize="50dp"
+                android:textColor="@color/white"
+                tools:ignore="ButtonStyle,TextContrastCheck,VisualLintButtonSize" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
